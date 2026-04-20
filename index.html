@@ -6,43 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kidathlon</title>
 
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Το Kidathlon Stars Club στην Πάτρα προσφέρει παιδική γυμναστική, baby swimming και αθλητικές δραστηριότητες από εξειδικευμένους γυμναστές."
-    />
-    <meta
-      name="keywords"
-      content="kidathlon, kidathlon club, kidathlon stars, kidathlon stars club, παιδική γυμναστική Πάτρα, baby swimming, παιδικά αθλήματα Πάτρα, ομαδικά παιχνίδια παιδιών, φυσική αγωγή παιδιά, mini games"
-    />
-    <meta name="author" content="Kidathlon Stars Club" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Kidathlon Stars Club Πάτρα - Παιδική Γυμναστική & Αθλητικές Δραστηριότητες"
-    />
-    <meta
-      property="og:description"
-      content="Γυμναστική, Παιχνίδι & Χαμόγελα για τους μικρούς μας φίλους! Δείτε τις δραστηριότητες μας στο Kidathlon στην Πάτρα."
-    />
-    <meta
-      property="og:image"
-      content="https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512"
-    />
-    <meta property="og:type" content="website" />
-
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 
     <style>
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -55,8 +24,7 @@
         --light: #fcfcfc;
       }
 
-      html,
-      body {
+      html, body {
         width: 100%;
         overflow-x: hidden;
       }
@@ -65,19 +33,12 @@
         font-family: "Poppins", Arial, Helvetica, sans-serif;
         color: var(--dark);
         line-height: 1.55;
-        background: #fff;
-        word-wrap: break-word;
         overflow-wrap: break-word;
       }
 
       img {
         max-width: 100%;
         display: block;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
       }
 
       .topbar {
@@ -87,7 +48,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 10px;
         padding: 10px 5%;
         font-size: 0.9rem;
       }
@@ -95,23 +56,19 @@
       .topbar .contact {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px 14px;
-        flex: 1 1 300px;
-        min-width: 0;
+        gap: 6px 12px;
       }
 
       .topbar .contact span {
-        margin-right: 0;
         word-break: break-word;
       }
 
-      .topbar input[type="text"] {
-        padding: 10px 12px;
+      .topbar input {
+        padding: 8px 10px;
         border: none;
         border-radius: 6px;
-        width: 100%;
-        max-width: 260px;
-        min-width: 0;
+        width: 220px;
+        max-width: 100%;
       }
 
       .navbar {
@@ -119,84 +76,54 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
         padding: 14px 5%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.06);
         position: sticky;
         top: 0;
         z-index: 1000;
       }
 
-      .navbar .logo {
+      .logo {
         display: flex;
         align-items: center;
         gap: 10px;
         font-size: 1.4rem;
         font-weight: 600;
         color: #1b04b6;
-        min-width: 0;
       }
 
-      .navbar .logo img {
+      .logo img {
         height: 36px;
-        width: auto;
-        flex-shrink: 0;
       }
 
       .navbar ul {
-        list-style: none;
         display: flex;
         gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      .navbar li a {
-        color: var(--dark);
-        font-weight: 500;
-        transition: color 0.2s;
-      }
-
-      .navbar li a:hover {
-        color: #1b04b6;
+        list-style: none;
       }
 
       .hero {
-        min-height: 75vh;
-        background: url("https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512")
-          center/cover no-repeat;
-        position: relative;
+        min-height: 70vh;
+        background: url("https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512") center/cover no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: var(--light);
-        padding: 40px 20px;
+        color: white;
+        position: relative;
+        padding: 20px;
       }
 
       .hero::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.35);
+        background: rgba(0,0,0,0.35);
       }
 
       .hero div {
         position: relative;
         z-index: 1;
-        width: 100%;
-        max-width: 700px;
-      }
-
-      .hero h1 {
-        font-size: clamp(1.8rem, 5vw, 2.8rem);
-        margin-bottom: 15px;
-        font-weight: 600;
-      }
-
-      .hero p {
-        font-size: clamp(1rem, 3vw, 1.15rem);
-        max-width: 520px;
-        margin: 0 auto;
       }
 
       section {
@@ -205,145 +132,70 @@
 
       .section-title {
         text-align: center;
-        font-size: clamp(1.5rem, 4vw, 1.8rem);
         color: #1b04b6;
         margin-bottom: 40px;
       }
 
-      .about {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .services-grid {
+      .services-grid,
+      .gallery-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+        gap: 20px;
       }
 
       .service-card {
-        background: var(--secondary);
+        background: white;
+        padding: 20px;
         border-radius: 8px;
-        padding: 25px 18px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      }
-
-      .service-card h3 {
-        font-size: 1.1rem;
-        margin-bottom: 12px;
-        color: #1b04b6;
-      }
-
-      .service-card p {
-        font-size: 0.95rem;
-      }
-
-      .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       }
 
       .gallery-grid img {
         width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
         border-radius: 6px;
       }
 
       footer {
-        background: var(--secondary);
         text-align: center;
-        padding: 40px 5%;
+        padding: 40px;
       }
 
-      footer h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-      }
-
-      footer p {
-        margin-bottom: 8px;
-      }
-
-      footer a {
-        color: #1b04b6;
-        word-break: break-word;
-      }
-
-      @media (max-width: 768px) {
-        .navbar {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .navbar ul {
-          width: 100%;
-          justify-content: flex-start;
-          gap: 14px;
-        }
-
-        .hero {
-          min-height: 60vh;
-        }
-      }
-
+      /* 🔥 MOBILE FIX */
       @media (max-width: 600px) {
+
         .topbar {
           flex-direction: column;
           align-items: stretch;
+          gap: 4px; /* μικρό κενό */
+          padding: 8px 5%;
         }
 
         .topbar .contact {
           flex-direction: column;
-          gap: 6px;
+          gap: 2px; /* σχεδόν καθόλου κενό */
         }
 
-        .topbar input[type="text"] {
-          max-width: 100%;
+        .topbar input {
           width: 100%;
-        }
-
-        .navbar {
-          align-items: center;
-          text-align: center;
-        }
-
-        .navbar .logo {
-          justify-content: center;
-          width: 100%;
+          margin-top: 2px;
+          padding: 8px;
         }
 
         .navbar ul {
           display: none;
         }
 
-        .hero {
-          min-height: 55vh;
-          padding: 30px 16px;
-        }
-
-        section {
-          padding: 45px 5%;
-        }
-
         .services-grid,
         .gallery-grid {
           grid-template-columns: 1fr;
         }
-
-        .service-card {
-          padding: 20px 16px;
-        }
       }
+
     </style>
   </head>
 
   <body>
+
     <div class="topbar">
       <div class="contact">
         <span>📞 +30 6946153833</span>
@@ -354,97 +206,48 @@
 
     <nav class="navbar">
       <div class="logo">
-        <img
-          src="https://1.gravatar.com/userimage/268735770/dd1b1cc15ec4b47b0bc918d311f4f0ca?size=512"
-          alt="Kidathlon Logo"
-        />
+        <img src="https://1.gravatar.com/userimage/268735770/dd1b1cc15ec4b47b0bc918d311f4f0ca?size=512" />
         Kidathlon
       </div>
       <ul>
-        <li><a href="#home">Αρχική</a></li>
-        <li><a href="#about">Σχετικά</a></li>
-        <li><a href="#services">Υπηρεσίες</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Επικοινωνία</a></li>
+        <li>Αρχική</li>
+        <li>Σχετικά</li>
+        <li>Υπηρεσίες</li>
+        <li>Gallery</li>
+        <li>Επικοινωνία</li>
       </ul>
     </nav>
 
-    <section id="home" class="hero">
+    <section class="hero">
       <div>
-        <h1>Καλωσήρθατε στο Kidathlon Stars Club!</h1>
-        <p>Γυμναστική, Παιχνίδι & Χαμόγελα για τους μικρούς μας φίλους!</p>
+        <h1>Καλωσήρθατε στο Kidathlon</h1>
+        <p>Γυμναστική & Παιχνίδι για παιδιά</p>
       </div>
     </section>
 
-    <section id="about">
-      <h2 class="section-title">Ποιοι είμαστε</h2>
-      <div class="about">
-        <p>
-          Θα θέλαμε να σας συστηθούμε! Η Kidathlon είναι μια καινοτόμα υπηρεσία
-          που εδρεύει στην Πάτρα και εξειδικεύεται στην παροχή επαγγελματιών
-          γυμναστών με εμπειρία στη νηπιακή και παιδική ηλικία. Όλοι οι
-          γυμναστές μας είναι απόφοιτοι Τμημάτων Φυσικής Αγωγής και Αθλητισμού
-          με εμπειρία και ειδίκευση στην παιδαγωγική προσέγγιση. Στόχος μας
-          είναι να γίνει η ομαλή ένταξη των παιδιών στον χώρο των αθλημάτων και
-          να εντρυφήσουν από νωρίς σε έναν υγιεινό τρόπο ζωής, καθώς και να
-          καλλιεργηθεί το συναίσθημα της ομαδικότητας και της ευγενούς άμιλλας.
-        </p>
-      </div>
-    </section>
-
-    <section id="services">
-      <h2 class="section-title">Ενδεικτικές Δραστηριότητες</h2>
+    <section>
+      <h2 class="section-title">Δραστηριότητες</h2>
       <div class="services-grid">
-        <div class="service-card">
-          <h3><span style="color: #000000;">Σκυταλοδρομίες & ομαδικά παιχνίδια</span></h3>
-          <p>Ομαδικά παιχνίδια για συνεργασία και διασκέδαση</p>
-        </div>
-        <div class="service-card">
-          <h3><span style="color: #000000;">Άλματα, ισορροπία, εμπόδια</span></h3>
-          <p>Κινητικές ασκήσεις για μυϊκή συναρμογή και ενδυνάμωση</p>
-        </div>
-        <div class="service-card">
-          <h3><span style="color: #000000;">Mini games με θεματική</span></h3>
-          <p>
-            Δραστηριότητες εμπνευσμένες απο διάφορες θεματικές
-            (π.χ Ολυμπιακή Ημέρα, Παιχνίδια Ζώων)
-          </p>
-        </div>
-        <div class="service-card">
-          <h3><span style="color: #000000;">Baby swimming</span></h3>
-          <p>Προγράμματα σε ασφαλές υδάτινο περιβάλλον</p>
-        </div>
+        <div class="service-card">Ομαδικά παιχνίδια</div>
+        <div class="service-card">Ισορροπία</div>
+        <div class="service-card">Mini Games</div>
+        <div class="service-card">Baby Swimming</div>
       </div>
     </section>
 
-    <section id="gallery">
-      <h2 class="section-title">Στιγμές δράσης</h2>
+    <section>
+      <h2 class="section-title">Gallery</h2>
       <div class="gallery-grid">
-        <img
-          src="https://2.gravatar.com/userimage/268735770/0899d2f908ae222e4357b9c4d407264d?size=512"
-          alt="kids fun"
-        />
-        <img
-          src="https://0.gravatar.com/userimage/268735770/9b5e6c2b2992a79b818aea9edf7b5ea6?size=512"
-          alt="kids smiling"
-        />
-        <img
-          src="https://2.gravatar.com/userimage/268735770/70aad26eaf052ef8d208ac8b926f6d7b?size=512"
-          alt="kids group"
-        />
+        <img src="https://2.gravatar.com/userimage/268735770/0899d2f908ae222e4357b9c4d407264d?size=512" />
+        <img src="https://0.gravatar.com/userimage/268735770/9b5e6c2b2992a79b818aea9edf7b5ea6?size=512" />
       </div>
     </section>
 
-    <footer id="contact">
+    <footer>
       <h2>Επικοινωνία</h2>
-      <p>📍Πάτρα</p>
-      <p>Τηλέφωνο: <a href="tel:+306946153833">+30 6946153833</a></p>
-      <p>
-        Email:
-        <a href="mailto:evangeloskanellopoulos99@gmail.com">
-          evangeloskanellopoulos99@gmail.com
-        </a>
-      </p>
+      <p>📍 Πάτρα</p>
+      <p>📞 +30 6946153833</p>
     </footer>
+
   </body>
 </html>
