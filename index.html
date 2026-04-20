@@ -7,13 +7,28 @@
     <title>Kidathlon</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Το Kidathlon Stars Club στην Πάτρα προσφέρει παιδική γυμναστική, baby swimming και αθλητικές δραστηριότητες από εξειδικευμένους γυμναστές.">
-    <meta name="keywords" content="kidathlon, kidathlon club, kidathlon stars, kidathlon stars club, παιδική γυμναστική Πάτρα, baby swimming, παιδικά αθλήματα Πάτρα, ομαδικά παιχνίδια παιδιών, φυσική αγωγή παιδιά, mini games">
-    <meta name="author" content="Kidathlon Stars Club">
+    <meta
+      name="description"
+      content="Το Kidathlon Stars Club στην Πάτρα προσφέρει παιδική γυμναστική, baby swimming και αθλητικές δραστηριότητες από εξειδικευμένους γυμναστές."
+    />
+    <meta
+      name="keywords"
+      content="kidathlon, kidathlon club, kidathlon stars, kidathlon stars club, παιδική γυμναστική Πάτρα, baby swimming, παιδικά αθλήματα Πάτρα, ομαδικά παιχνίδια παιδιών, φυσική αγωγή παιδιά, mini games"
+    />
+    <meta name="author" content="Kidathlon Stars Club" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Kidathlon Stars Club Πάτρα - Παιδική Γυμναστική & Αθλητικές Δραστηριότητες" />
-    <meta property="og:description" content="Γυμναστική, Παιχνίδι & Χαμόγελα για τους μικρούς μας φίλους! Δείτε τις δραστηριότητες μας στο Kidathlon στην Πάτρα." />
-    <meta property="og:image" content="https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512" />
+    <meta
+      property="og:title"
+      content="Kidathlon Stars Club Πάτρα - Παιδική Γυμναστική & Αθλητικές Δραστηριότητες"
+    />
+    <meta
+      property="og:description"
+      content="Γυμναστική, Παιχνίδι & Χαμόγελα για τους μικρούς μας φίλους! Δείτε τις δραστηριότητες μας στο Kidathlon στην Πάτρα."
+    />
+    <meta
+      property="og:image"
+      content="https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512"
+    />
     <meta property="og:type" content="website" />
 
     <!-- Google Font -->
@@ -25,7 +40,9 @@
     />
 
     <style>
-      *, *::before, *::after {
+      *,
+      *::before,
+      *::after {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -38,10 +55,24 @@
         --light: #fcfcfc;
       }
 
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
       body {
         font-family: "Poppins", Arial, Helvetica, sans-serif;
         color: var(--dark);
         line-height: 1.55;
+        background: #fff;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
       }
 
       a {
@@ -55,19 +86,32 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 8px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 10px 5%;
         font-size: 0.9rem;
       }
 
+      .topbar .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        flex: 1 1 300px;
+        min-width: 0;
+      }
+
       .topbar .contact span {
-        margin-right: 15px;
+        margin-right: 0;
+        word-break: break-word;
       }
 
       .topbar input[type="text"] {
-        padding: 6px 10px;
+        padding: 10px 12px;
         border: none;
-        border-radius: 4px;
-        min-width: 180px;
+        border-radius: 6px;
+        width: 100%;
+        max-width: 260px;
+        min-width: 0;
       }
 
       .navbar {
@@ -75,6 +119,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
         padding: 14px 5%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
         position: sticky;
@@ -86,20 +131,23 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 600;
-        color: var(--primary);
+        color: #1b04b6;
+        min-width: 0;
       }
 
       .navbar .logo img {
         height: 36px;
         width: auto;
+        flex-shrink: 0;
       }
 
       .navbar ul {
         list-style: none;
         display: flex;
-        gap: 25px;
+        gap: 20px;
+        flex-wrap: wrap;
       }
 
       .navbar li a {
@@ -109,18 +157,20 @@
       }
 
       .navbar li a:hover {
-        color: var(--primary);
+        color: #1b04b6;
       }
 
       .hero {
-        height: 75vh;
-        background: url("https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512") center/cover no-repeat;
+        min-height: 75vh;
+        background: url("https://1.gravatar.com/userimage/268735770/02e1d3a1c2af21a2b15a88a9eb2d57b4?size=512")
+          center/cover no-repeat;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         color: var(--light);
+        padding: 40px 20px;
       }
 
       .hero::before {
@@ -130,20 +180,21 @@
         background: rgba(0, 0, 0, 0.35);
       }
 
-      .hero h1,
-      .hero p {
+      .hero div {
         position: relative;
         z-index: 1;
+        width: 100%;
+        max-width: 700px;
       }
 
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: clamp(1.8rem, 5vw, 2.8rem);
         margin-bottom: 15px;
         font-weight: 600;
       }
 
       .hero p {
-        font-size: 1.1rem;
+        font-size: clamp(1rem, 3vw, 1.15rem);
         max-width: 520px;
         margin: 0 auto;
       }
@@ -154,8 +205,8 @@
 
       .section-title {
         text-align: center;
-        font-size: 1.8rem;
-        color: var(--primary);
+        font-size: clamp(1.5rem, 4vw, 1.8rem);
+        color: #1b04b6;
         margin-bottom: 40px;
       }
 
@@ -178,13 +229,13 @@
         background: var(--secondary);
         border-radius: 8px;
         padding: 25px 18px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
 
       .service-card h3 {
         font-size: 1.1rem;
         margin-bottom: 12px;
-        color: var(--primary);
+        color: #1b04b6;
       }
 
       .service-card p {
@@ -199,7 +250,7 @@
 
       .gallery-grid img {
         width: 100%;
-        aspect-ratio: 4/3;
+        aspect-ratio: 4 / 3;
         object-fit: cover;
         border-radius: 6px;
       }
@@ -220,12 +271,73 @@
       }
 
       footer a {
-        color: var(--primary);
+        color: #1b04b6;
+        word-break: break-word;
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar ul {
+          width: 100%;
+          justify-content: flex-start;
+          gap: 14px;
+        }
+
+        .hero {
+          min-height: 60vh;
+        }
       }
 
       @media (max-width: 600px) {
+        .topbar {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .topbar .contact {
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .topbar input[type="text"] {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        .navbar {
+          align-items: center;
+          text-align: center;
+        }
+
+        .navbar .logo {
+          justify-content: center;
+          width: 100%;
+        }
+
         .navbar ul {
           display: none;
+        }
+
+        .hero {
+          min-height: 55vh;
+          padding: 30px 16px;
+        }
+
+        section {
+          padding: 45px 5%;
+        }
+
+        .services-grid,
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-card {
+          padding: 20px 16px;
         }
       }
     </style>
@@ -242,8 +354,11 @@
 
     <nav class="navbar">
       <div class="logo">
-        <img src="https://1.gravatar.com/userimage/268735770/dd1b1cc15ec4b47b0bc918d311f4f0ca?size=512" alt="Kidathlon Logo" />
-         Kidathlon 
+        <img
+          src="https://1.gravatar.com/userimage/268735770/dd1b1cc15ec4b47b0bc918d311f4f0ca?size=512"
+          alt="Kidathlon Logo"
+        />
+        Kidathlon
       </div>
       <ul>
         <li><a href="#home">Αρχική</a></li>
@@ -262,18 +377,23 @@
     </section>
 
     <section id="about">
-      <h2 class="section-title" style="color: #1b04b6;">Ποιοι είμαστε</h2>
+      <h2 class="section-title">Ποιοι είμαστε</h2>
       <div class="about">
         <p>
-          Θα θέλαμε να σας συστηθούμε! Η Kidathlon είναι μια καινοτόμα υπηρεσία που εδρεύει στην Πάτρα και εξειδικεύεται στην παροχή επαγγελματιών γυμναστών με εμπειρία στη νηπιακή και παιδική ηλικία. Όλοι οι γυμναστές μας είναι απόφοιτοι Τμημάτων Φυσικής Αγωγής και Αθλητισμού με εμπειρία και ειδίκευση στην παιδαγωγική προσέγγιση.
-          Στόχος μας είναι να γίνει η ομαλή ένταξη των παιδιών στον χώρο των αθλημάτων και να εντρυφήσουν από νωρίς σε έναν υγιεινό τρόπο ζωής, καθώς και
-          να καλλιεργηθεί το συναίσθημα της ομαδικότητας και της ευγενούς άμιλλας.
+          Θα θέλαμε να σας συστηθούμε! Η Kidathlon είναι μια καινοτόμα υπηρεσία
+          που εδρεύει στην Πάτρα και εξειδικεύεται στην παροχή επαγγελματιών
+          γυμναστών με εμπειρία στη νηπιακή και παιδική ηλικία. Όλοι οι
+          γυμναστές μας είναι απόφοιτοι Τμημάτων Φυσικής Αγωγής και Αθλητισμού
+          με εμπειρία και ειδίκευση στην παιδαγωγική προσέγγιση. Στόχος μας
+          είναι να γίνει η ομαλή ένταξη των παιδιών στον χώρο των αθλημάτων και
+          να εντρυφήσουν από νωρίς σε έναν υγιεινό τρόπο ζωής, καθώς και να
+          καλλιεργηθεί το συναίσθημα της ομαδικότητας και της ευγενούς άμιλλας.
         </p>
       </div>
     </section>
 
     <section id="services">
-      <h2 class="section-title" style="color: #1b04b6;">Ενδεικτικές Δραστηριότητες</h2>
+      <h2 class="section-title">Ενδεικτικές Δραστηριότητες</h2>
       <div class="services-grid">
         <div class="service-card">
           <h3><span style="color: #000000;">Σκυταλοδρομίες & ομαδικά παιχνίδια</span></h3>
@@ -285,7 +405,10 @@
         </div>
         <div class="service-card">
           <h3><span style="color: #000000;">Mini games με θεματική</span></h3>
-          <p>Δραστηριότητες εμπνευσμένες απο διάφορες θεματικές (π.χ Ολυμπιακή Ημέρα, Παιχνίδια Ζώων)</p>
+          <p>
+            Δραστηριότητες εμπνευσμένες απο διάφορες θεματικές
+            (π.χ Ολυμπιακή Ημέρα, Παιχνίδια Ζώων)
+          </p>
         </div>
         <div class="service-card">
           <h3><span style="color: #000000;">Baby swimming</span></h3>
@@ -295,11 +418,20 @@
     </section>
 
     <section id="gallery">
-      <h2 class="section-title" style="color: #1b04b6;">Στιγμές δράσης</h2>
+      <h2 class="section-title">Στιγμές δράσης</h2>
       <div class="gallery-grid">
-        <img src="https://2.gravatar.com/userimage/268735770/0899d2f908ae222e4357b9c4d407264d?size=512" alt="kids fun" />
-        <img src="https://0.gravatar.com/userimage/268735770/9b5e6c2b2992a79b818aea9edf7b5ea6?size=512" alt="kids smiling" />
-        <img src="https://2.gravatar.com/userimage/268735770/70aad26eaf052ef8d208ac8b926f6d7b?size=512" alt="kids group" />
+        <img
+          src="https://2.gravatar.com/userimage/268735770/0899d2f908ae222e4357b9c4d407264d?size=512"
+          alt="kids fun"
+        />
+        <img
+          src="https://0.gravatar.com/userimage/268735770/9b5e6c2b2992a79b818aea9edf7b5ea6?size=512"
+          alt="kids smiling"
+        />
+        <img
+          src="https://2.gravatar.com/userimage/268735770/70aad26eaf052ef8d208ac8b926f6d7b?size=512"
+          alt="kids group"
+        />
       </div>
     </section>
 
@@ -307,7 +439,12 @@
       <h2>Επικοινωνία</h2>
       <p>📍Πάτρα</p>
       <p>Τηλέφωνο: <a href="tel:+306946153833">+30 6946153833</a></p>
-      <p>Email: <a href="mailto:evangeloskanellopoulos99@gmail.com">evangeloskanellopoulos99@gmail.com</a></p>
+      <p>
+        Email:
+        <a href="mailto:evangeloskanellopoulos99@gmail.com">
+          evangeloskanellopoulos99@gmail.com
+        </a>
+      </p>
     </footer>
   </body>
 </html>
